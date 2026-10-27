@@ -1,0 +1,6 @@
+{
+  "name": "Yoghurt & Cake Shop Manager",
+  "description": "A role-based shop operations app for recording sales and expenses, reviewing reports, and managing staff.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
