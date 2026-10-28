@@ -1,7 +1,7 @@
 import {createRoot} from 'react-dom/client';
-import App from './App.tsx';
-import './index.css';
-import { applyTheme, getInitialTheme } from './lib/theme.ts';
+import App from '../App.tsx';
+import '../index.css';
+import { applyTheme, getInitialTheme } from '../theme.ts';
 
 applyTheme(getInitialTheme());
 
