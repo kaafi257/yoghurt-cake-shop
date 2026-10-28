@@ -56,13 +56,16 @@ export default defineConfig(() => {
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
+        './lib/auth': path.resolve(__dirname, './auth'),
+        './lib/supabase': path.resolve(__dirname, './supabase'),
+        './lib/store': path.resolve(__dirname, './store'),
+        './lib/theme': path.resolve(__dirname, './theme'),
+        './lib/usePWAInstall': path.resolve(__dirname, './usePWAInstall'),
+        './pages/Login': path.resolve(__dirname, './Login'),
       },
     },
     server: {
-      // HMR is disabled in AI Studio via DISABLE_HMR env var.
-      // Do not modify—file watching is disabled to prevent flickering during agent edits.
       hmr: process.env.DISABLE_HMR !== 'true',
-      // Disable file watching when DISABLE_HMR is true to save CPU during agent edits.
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
     },
   };
